@@ -1,7 +1,7 @@
 # DeNN-based-MoSSSS
 
 ## 📖 Introduction  
-The goal of this project is to perform **morphological optimization with neural networks** so that input shell structures become **self-supporting for 3D printing self-supporting single shell**, eliminating the need for additional support structures.  
+The goal of this project is to perform **morphological optimization with neural networks** so that input shell structures become **self-supporting for planar 3D printing**, eliminating the need for additional support structures.  
 
 ---
 
@@ -109,14 +109,14 @@ This project provides three demo mesh cases for direct testing.
 ## 📂 Project Structure
 ```
 .
-├── mesh_refine_nn/          # Core neural network and main function
+├── mesh_refine_nn/        # Core neural network and main function
 │   └── main.py/             
-├── demo_case1/              # Demo input mesh 1
+├── branches/              # Demo input mesh 1
 │   ├── mesh.obj
-│   └── output/              # Results
-├── demo_case2/              # Demo input mesh 2
-├── demo_case3/              # Demo input mesh 3
-├── example_mesh/            # Example folder for user input
+│   └── output/            # Results
+├── circles/               # Demo input mesh 2
+├── wallwitholes/          # Demo input mesh 3
+├── example_mesh/          # Example folder for user input
 │   ├── mesh.obj
 │   └── output/              
 └── README.md
@@ -127,5 +127,6 @@ This project provides three demo mesh cases for direct testing.
 ## 🔧 Configurable Parameters
 - `foldername`: Folder name of the input mesh  
 - `support_angle`: Self-supporting angle threshold (degrees, default = 45°)
+
 
 
